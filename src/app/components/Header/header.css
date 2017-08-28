@@ -1,0 +1,34 @@
+.header-component-wrapper {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 60px; }
+  .header-component-wrapper .no-border {
+    border: none !important; }
+    .header-component-wrapper .no-border:hover {
+      background: none !important; }
+  .header-component-wrapper .right-content {
+    margin-right: 10px; }
+  .header-component-wrapper .left-content {
+    margin-left: 10px; }
+  .header-component-wrapper .nav-wrapper {
+    justify-content: center;
+    display: flex; }
+    .header-component-wrapper .nav-wrapper svg {
+      color: white; }
+    .header-component-wrapper .nav-wrapper .active {
+      border: 1px solid white; }
+    .header-component-wrapper .nav-wrapper a {
+      display: flex-inline;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      margin: 10px;
+      padding: 10px 15px; }
+      .header-component-wrapper .nav-wrapper a:hover {
+        background: white;
+        color: #3498db; }

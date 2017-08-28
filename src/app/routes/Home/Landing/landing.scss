@@ -1,0 +1,12 @@
+#lander-wrapper {
+  background-size: cover;
+}
+
+#lander-wrapper:after {
+  background: linear-gradient(135deg,#2c3e50,#3498db);
+  content: '';
+  height: 100%;
+  opacity: 1;
+  position: absolute;
+  width: 100%
+}
