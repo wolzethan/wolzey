@@ -36,7 +36,7 @@ export default class Header extends Component {
           <div className='right-content'>
             <div className='nav-wrapper'>
               <NavLink to='/projects'>Projects</NavLink>              
-              <NavLink to='/home'>About</NavLink>
+              <NavLink to='/about'>About</NavLink>
               <NavLink to='/contact'>Contact</NavLink>              
             </div>
           </div>
