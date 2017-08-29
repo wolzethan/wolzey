@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { roles } from './roles'
 import './typewriter.css'
 
-const PAUSE_TIME = 3000
-const TIMER_INTERVAL = 300
-const BACKUP_INTERVAL = 150
+const PAUSE_TIME = 1500
+const TIMER_INTERVAL = 200
+const BACKUP_INTERVAL = 90
 
 export default class Typewriter extends Component {
   chooseRandom(roles) {
@@ -41,7 +41,10 @@ export default class Typewriter extends Component {
         this.iterateRole(role, i + 1)
       }, TIMER_INTERVAL)
     } else {
-      this.backspaceRole(i - 1)
+      let _this = this;
+      setTimeout(function () {
+        _this.backspaceRole(i - 1)
+      }, PAUSE_TIME)
     }
   }
 
