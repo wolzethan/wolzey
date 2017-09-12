@@ -4,9 +4,7 @@ import './landing.css'
 import BackgroundImg from './sunset.jpg'
 
 export default class Landing extends Component {
-
   render() {
-
     const styles = {
       backgroundImage: `url(${BackgroundImg})`
     }
@@ -16,10 +14,9 @@ export default class Landing extends Component {
         <div id='lander-wrapper' style={styles}></div>
         <div className='lander-content'>
           <div className='hero-content'>
-            
+            <Typewriter />            
           </div>
           <br />          
-          <Typewriter />
         </div>
       </div>
     )
