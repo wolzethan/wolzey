@@ -35,7 +35,7 @@ export default class Header extends Component {
           </div>
           <div className='right-content'>
             <div className='nav-wrapper'>
-              <NavLink to='/projects'>Projects</NavLink>              
+              {/* <NavLink to='/projects'>Projects</NavLink>             */}
               <NavLink to='/about'>About</NavLink>
               <a href='mailto:ethan@creadiv.io'>Contact</a>              
             </div>
