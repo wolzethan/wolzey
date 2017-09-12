@@ -28,6 +28,6 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "serve": "6.0.6"
+    "serve": "^6.0.6"
   }
 }
