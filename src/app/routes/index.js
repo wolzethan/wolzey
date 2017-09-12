@@ -18,7 +18,8 @@ export default class Routes extends Component {
           <Route path="/:site?" component={Header} />
           <div className="routes-container">
             <Switch>
-              <Redirect exact from="/" to="/home" />
+              <Redirect exact from='/' to='/home' />
+              <Redirect exact from='/about' to='/home/about' />
               <Route path="/home" component={Home} />
             </Switch>
           </div>

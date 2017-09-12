@@ -18,27 +18,32 @@
 
 #lander-wrapper:after {
   background: linear-gradient(135deg,#D3959B,#FFB88C);
+  background: -webkit-linear-gradient(135deg,#D3959B,#FFB88C);
+  background: -o-linear-gradient(135deg,#D3959B,#FFB88C);
+  background: -moz-linear-gradient(135deg,#D3959B,#FFB88C);
   content: '';
   height: 100%;
-  opacity: .6;
+  opacity: .7;
   width: 100%;
 }
 
 .lander-content {
   display: flex;
+  display:-webkit-flex;
   height: 100%;
   flex-direction: column;
 }
 
 .hero-content {
   display: flex;
+  display:-webkit-flex;
   z-index: 15;
   align-self: center;
   justify-content: flex-end;
-  height: 30%;
 
   .hero-item {
     display: flex;
+    display:-webkit-flex;
     align-self: center;
   }
 }
