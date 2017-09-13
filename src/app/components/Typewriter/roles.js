@@ -7,6 +7,5 @@ export const roles = [
   'Wakeboarder',
   'Snowboarder',
   'Engineer',
-  'Nerd',
-  'Wakesurfer'
+  'Nerd'
 ]
