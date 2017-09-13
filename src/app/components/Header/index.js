@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import Appbar from 'material-ui/AppBar';
-import * as mui from 'material-ui';
 import CodeIcon from 'react-material-icons/icons/action/code'
 import './header.css'
 

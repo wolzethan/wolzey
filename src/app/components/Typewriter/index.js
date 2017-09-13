@@ -11,6 +11,11 @@ export default class Typewriter extends Component {
     return roles[Math.floor(Math.random() * roles.length)]
   }
 
+  state = {
+    currentRole: this.chooseRandom(roles),
+    currentValue: ""
+  }
+
   start(){
     this.setState({
       currentRole: this.chooseRandom(roles),
@@ -21,7 +26,7 @@ export default class Typewriter extends Component {
 
   backspaceRole(i) {
     if (i >= 0) {
-      setTimeout(() => {
+      this.timer = setTimeout(() => {
         this.setState({
           currentValue: this.state.currentValue.substring(0, i)
         })
@@ -34,7 +39,7 @@ export default class Typewriter extends Component {
 
   iterateRole(role, i) {
     if (i <= role.length) {
-      setTimeout(() => {
+      this.timer = setTimeout(() => {
         this.setState({
           currentValue: role[i] ? this.state.currentValue + role[i] : this.state.currentValue
         })
@@ -42,21 +47,18 @@ export default class Typewriter extends Component {
       }, TIMER_INTERVAL)
     } else {
       let _this = this;
-      setTimeout(function () {
+      this.timer = setTimeout(function () {
         _this.backspaceRole(i - 1)
       }, PAUSE_TIME)
     }
   }
 
-  componentWillMount() {
-    this.setState({
-      currentRole: this.chooseRandom(roles),
-      currentValue: ""
-    })
-  }
-
   componentDidMount() {
     this.start()
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timer)
   }
 
   render() {

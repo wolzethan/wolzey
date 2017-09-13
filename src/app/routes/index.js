@@ -7,6 +7,7 @@ import './routes.css';
 
 // TODO: create header and footer
 import Header from '../components/Header'
+import SocialFooter from '../components/SocialFooter'
 // import Footer from '../components/Footer'
 
 
@@ -23,6 +24,7 @@ export default class Routes extends Component {
               <Route path="/home" component={Home} />
             </Switch>
           </div>
+          <Route path="/:site?" component={SocialFooter} />          
           {/* <Route path='/:site?' component={Footer} /> */}
         </div>
       </Router>
