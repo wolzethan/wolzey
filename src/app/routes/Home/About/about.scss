@@ -53,6 +53,13 @@
   font-weight: 300 !important;
   margin: -150px 10px 0 10px;
 
+  @media screen and (max-width: 480px) {
+    margin-top: 3%;
+    max-width: 90%;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+
   h2 {
     font-size: 50px;
   }
@@ -67,6 +74,7 @@
 }
 
 @media screen and (max-width: 480px) {
+
   h3, h6 {
     text-align: center;
     font-size: 25px !important;
